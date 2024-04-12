@@ -1,4 +1,4 @@
-class Person {
+export class Person {
   public address: string = '';
   public postcode: string = '';
   public city: string = '';
@@ -14,7 +14,7 @@ class Person {
   }
 }
 
-class PersonBuilder {
+export class PersonBuilder {
   protected person: Person;
   constructor(person = new Person()) {
     this.person = person;
@@ -33,7 +33,7 @@ class PersonBuilder {
   }
 }
 
-class PersonAddressBulider extends PersonBuilder {
+export class PersonAddressBulider extends PersonBuilder {
   constructor(person: Person) {
     super(person);
   }
@@ -54,7 +54,7 @@ class PersonAddressBulider extends PersonBuilder {
   }
 }
 
-class PersonJobBulider extends PersonBuilder {
+export class PersonJobBulider extends PersonBuilder {
   constructor(person: Person) {
     super(person);
   }

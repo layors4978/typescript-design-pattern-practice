@@ -1,4 +1,4 @@
-class UrlBuilder {
+export class UrlBuilder {
   private path: string;
   private queries: string[] = [];
   private fragment: string;
